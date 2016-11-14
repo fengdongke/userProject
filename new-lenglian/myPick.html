@@ -1,0 +1,265 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>我要提货</title>
+		<link rel="stylesheet" href="js/bootstrap-3.3.5/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/puluosi.css" />
+
+		
+	    <!---!IE9+ H5标签--->
+	     <script src="js/html5shiv.js"></script>
+	     <!---!IE9+ 伪类选择器--->
+	     <script src="js/selectivizr.js"></script>
+	     
+	</head>
+	<body>
+		<!---导航-->
+		<div class='header'>
+			<div class="headerTop">
+				<span>欢迎来到普洛斯金融！</span>
+				<span>
+					<img src="img/phone.png" alt="" />
+					<span>021-88888888</span>
+				</span>
+				<ul class='headerRt'>
+					<li>
+						<a href="javascript:;">
+							<img class='lianxi' src="img/lianxi.png" alt="" />
+							<span>上海章进贸易公司</span>
+						</a>
+					</li>
+					<li><a href="javascript:;">退出登陆</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="headerBtm">
+			<div class='headerBtmBox'>
+				<img src="img/logo.png" alt="" />
+				<img class='verticalLine' src="img/verticalLine.png" alt="" />
+				<img src="img/logoName.png" alt="" />
+				<img class='logoBg rt' src="img/logoBg.png" alt="" />
+			</div>	
+		</div>
+		<!---内容-->
+		<div class="contentBox">
+			<div class='content'>
+				<div class="navLeftBox lt">
+					<ul class="navLeft">
+						<li class='active'>
+							<a class="myPick" href="#mypickLi">
+								<img src="img/pickGoods.png" alt="" />
+								<span>我要提货</span>
+							</a>
+						</li>
+						<li>
+							<a class="PickMge" href="pickCenter.html">
+								<img src="img/pickManage.png" alt="" />
+								<span>提货管理</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="pickCont lt"  id='mypickLi'>
+					<div class="deliverDateBox bgf">
+						<div class="deliverDate">						
+							<div class='dateOne'>
+								<b class='lt'>01</b>
+								<div class='lt dateLetter'>
+									<p>提货日期</p>
+									<b>Delivery</b>
+									<span>date</span>
+								</div>
+							</div>
+						</div>
+						<div class="pickerDate">
+							<img src="img/date.png" alt="" />
+							<input type="text" class='picktime time2' id='trainDate' placeholder=" 请选择提货日期" />
+							
+						</div>
+					</div>
+					<div class="deliverDateBox2">
+						<div class="deliverDate bgf">						
+							<div class='dateOne'>
+								<b class='lt'>02</b>
+								<div class='lt dateLetter'>
+									<p>提货信息</p>
+									<b>Delivery</b>
+									<span>information</span>
+								</div>
+							</div>
+						</div>
+						<div class="pickMess pickMess2">
+							<table class='Mess1 messTwo ckdlE'>
+								<tr class='dateCaption'>
+									<td>货物信息</td>
+									<td>货物名称</td>
+									<td>可提数量</td>
+									<td>货物单位</td>
+									<td>提货数量</td>
+								</tr>
+								<tr>
+									<td>PLS66079</td>
+									<td>带骨牛读入</td>
+									<td class='num100'>100</td>
+									<td>	KG</td>
+									<td class='pickNum'>
+										 <input class="num" name="num" value="" />
+									</td>
+								</tr>
+								<tr>							
+									<td>PLS66079</td>
+									<td>带骨牛读入</td>
+									<td>100</td>
+									<td>	KG</td>
+									<td class='pickNum'>
+										 <input class="num" name="num" value="" />
+									</td>
+								</tr>
+								<tr>
+									<td>PLS66079</td>
+									<td>带骨牛读入</td>
+									<td>100</td>
+									<td>	KG</td>
+									<td class='pickNum'>
+										 <input class="num" name="num" value="" />
+									</td>
+								</tr>
+								<tr>
+									<td>PLS66079</td>
+									<td>带骨牛读入</td>
+									<td>100</td>
+									<td>	KG</td>
+									<td class='pickNum'>
+										 <input class="num" name="num" value="" />
+									</td>
+								</tr>
+								<tr>
+									<td>PLS66079</td>
+									<td>带骨牛读入</td>
+									<td>100</td>
+									<td>	KG</td>
+									<td class='pickNum'>
+										 <input class="num" name="num" value="" />
+									</td>
+								</tr>
+								<tr>
+									<td colspan='4'></td>
+									<td class='addSum' colspan='1'>共计： <span class='countBox'> </span>
+										件 ｜<input class="all_price" name="all_price" readonly="readonly" /> KG
+									</td>								
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="deliverDateBox2 bgf">
+						<div class="deliverDate ">						
+							<div class='dateOne'>
+								<b class='lt'>03</b>
+								<div class='lt dateLetter'>
+									<p>提货司机信息</p>
+									<b>Driver</b>
+									<span class='driverInfo'>information</span>
+								</div>
+							</div>
+						</div>
+						<div class="driverMess">
+								<div class="driverLi">
+									<img  class="deleteImg" src="img/deleteImg.png" alt="" />
+									<p>
+										<img src="img/driveName.png" alt="" />
+										<input id='username' type="text" placeholder='司机姓名'/>
+										<!--span id='warning-message' class="nullInfo"></span-->
+									</p>
+									<p>
+										<img src="img/drivePhe.png" alt="" />
+										<input id='userPhe' class='phoneNum' placeholder='司机电话'/>
+									</p>
+									<p>
+										<img src="img/cartMess.png" alt="" />
+										<input id='username2' type="text" placeholder='车牌信息'/>
+									</p>
+								</div>
+								<div class="driverLi driverLi2">
+									<p class='addDriveBox'>
+										<img src="img/addFile.png" alt="" />
+										<span>添加提货司机</span>
+									</p>
+								</div>
+						</div>
+						<a href="javascript:;"  class='applyBtmBtn'>申请提货</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+    <!---提示框--->
+   
+    		<div class="surePickBox">
+			<div class="surePickInfo bgf">
+				<div class="sureTop">
+					<span>请确认提货信息</span>
+					<p>
+						预计提货日期：<span>2016-11-20</span>
+					</p>
+				</div>
+				
+				<div class="deliverDateBox2 sureList">
+						<div class="pickMess pickMess2">
+							<table class='Mess1 messTwo sureListInfo '>
+								<tr class='sureCap'>
+									<td>序号</td>
+									<td>货物编号</td>
+									<td>货物名称</td>
+									<td>提货数量</td>
+								</tr>
+							</table>
+						</div>
+				</div>
+				<div class="okCanel bgf">
+					<a href='mypick.html' class='pickcanelBtn canelBtn'>取消</a>
+					<a href='pickCenter.html' class='okBtn'>确认</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!---至少选择一种货物--->
+		<div class="surePickBox2">
+    			<div class="surePickInfo2 "></div>
+			<div class="sureTop2 bgf">
+				<span>提示</span>
+				<p>至少选择一种货物</p>
+				<a href='javascript:;'  onclick="Known();" class='meKnown okBtn'>知道了</a>
+			</div>
+      </div>
+		
+		
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/laydate/laydate.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/phoneCk.js"></script>
+	<script src="js/json.js"></script>
+   
+    <script type="text/javascript">
+    /***********日期插件*********/
+    		laydate({
+	      elem: '#trainDate',  //哪个元素上提供日期选择功能
+	      event: 'focus',   //获得焦点时显示日期选择器
+	      /*min: '2016-06-02'*/
+	      /*max: '2016-07-01'*/
+	      format: 'YYYY-MM-DD', //日期格式
+	      min: laydate.now(),
+	      // max: laydate.now(+20), -往前  +往后  n天
+	      festival: true, //是否显示节日名称
+	      istime: true,   //是否显示时间
+	      istoday: true, //是否显示“今天”按钮
+	      isclear: true, //是否显示“清空”按钮
+	      issure: true,  //是否显示“确定”按钮
+	    });
+
+</script>
+ 
+	</body>
+</html>
